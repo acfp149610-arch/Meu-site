@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revisar pedido | LAJ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="cadastro-container">
+        <h1>Revise seu pedido</h1>
+        <p>Confira os dados antes de continuar.</p>
+
+        <section id="resumoPedido">
+            <p>Carregando seu carrinho...</p>
+        </section>
+
+        <p id="mensagemCheckout" role="status"></p>
+
+        <button type="button" id="confirmarPedido">
+            Confirmar dados do pedido
+        </button>
+
+        <p>
+            <a href="index.html">Voltar para os ingressos</a>
+        </p>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="supabase.js"></script>
+    <script src="checkout.js"></script>
+
+</body>
+</html>

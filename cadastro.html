@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar conta | LAJ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="cadastro-container">
+        <h1>Crie sua conta</h1>
+        <p>Entre para acompanhar suas compras na LAJ.</p>
+
+        <form id="formCadastro">
+            <label for="nome">Nome completo</label>
+            <input type="text" id="nome" required>
+
+            <label for="email">E-mail</label>
+            <input type="email" id="email" required>
+
+            <label for="senha">Senha</label>
+            <input type="password" id="senha" minlength="6" required>
+
+            <button type="submit">Criar conta</button>
+        </form>
+
+        <p id="mensagemCadastro" role="status"></p>
+
+        <p>Já tem uma conta?
+            <a href="login.html">Entrar</a>
+        </p>
+    </main>
+
+    
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="supabase.js"></script>
+<script src="cadastro.js"></script>
+
+</body>
+</html>
